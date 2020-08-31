@@ -10,9 +10,11 @@
 </template>
 <script>
 export default {
-  data: () => ({
-    msg: `/author/_id.vueを表示`,
-    id: this.$route.params.id,
-  }),
+  data: function () {
+    return {
+      msg: `/author/_id.vueを表示`,
+      id: this.$route.params.id,
+    };
+  },
 };
 </script>
