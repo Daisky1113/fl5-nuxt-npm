@@ -3,7 +3,7 @@
     <v-row justify="center">
       <v-col cols="6">
         <v-card>
-          <v-card-title>{{message}}</v-card-title>
+          <v-card-title>{{msg}}</v-card-title>
           <v-card-text>
             <v-text-field @input="changeMessage" label="Outlined" outlined></v-text-field>
           </v-card-text>
@@ -17,8 +17,16 @@
 import { mapState, mapMutations } from "vuex";
 export default {
   layout: "simple",
+  async asyncData({ $axios }) {
+    const msg = await $axios.$get("/api/hoge/");
+    return msg;
+  },
+  async mounted() {
+    // const { msg } = await this.$axios.$get("/api/hoge/");
+    // this.msgFromApi = msg;
+  },
   data: () => ({
-    msg: "Hello World is mine",
+    msgFromApi: "",
   }),
   computed: {
     ...mapState(["message"]),
