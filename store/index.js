@@ -1,5 +1,6 @@
 export const state = () => ({
-  message: "msg from store"
+  message: "msg from store",
+  userId: 'hogehogefoobar'
 })
 
 export const mutations = {
