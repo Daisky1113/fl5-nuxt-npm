@@ -13,8 +13,12 @@ export default {
   data: function () {
     return {
       msg: `/author/_id.vueを表示`,
+      userId: "hogehogefoobar",
       id: this.$route.params.id,
     };
+  },
+  validate({ params }) {
+    return this.userId == params.id;
   },
 };
 </script>
