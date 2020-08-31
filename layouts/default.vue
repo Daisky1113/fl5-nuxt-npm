@@ -55,6 +55,11 @@ export default {
           title: "Inspire",
           to: "/inspire",
         },
+        {
+          icon: "mdi-clipboard-list-outline",
+          title: "List",
+          to: "/list",
+        },
       ],
       miniVariant: false,
       right: true,
