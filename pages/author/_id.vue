@@ -10,6 +10,9 @@
 </template>
 <script>
 export default {
+  head() {
+    return { title: "authorのページ" };
+  },
   data: function () {
     return {
       msg: `/author/_id.vueを表示`,
