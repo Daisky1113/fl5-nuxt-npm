@@ -15,6 +15,9 @@ export default {
     count() {
       return this.inputTex.length;
     },
+    textsizeMin() {
+      return this.count < 8 ? true : false;
+    },
   },
   methods: {},
 };
