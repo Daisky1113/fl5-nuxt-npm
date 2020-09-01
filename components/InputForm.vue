@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-card-text>
-      <v-text-field id="titleInput" label="test1" outlined />
+      <v-text-field v-model="inputTex" id="titleInput" label="test1" outlined />
     </v-card-text>
   </v-card>
 </template>
