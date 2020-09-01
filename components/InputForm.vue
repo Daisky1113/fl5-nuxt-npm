@@ -11,6 +11,11 @@ export default {
   data: () => ({
     inputTex: "",
   }),
+  computed: {
+    count() {
+      return this.inputTex.length;
+    },
+  },
   methods: {},
 };
 </script>
