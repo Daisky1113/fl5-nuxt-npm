@@ -19,4 +19,10 @@ describe('InputForm', () => {
     expect(inputValue).toBe('')
   })
 
+  test('inputの値が変わるとinputTextの値も変わる', () => {
+    input.setValue('hogehoge')
+    const inputVal = wrapper.vm.$data.inputTex
+    expect(inputValue).toBe('hogehoge')
+  })
+
 })
