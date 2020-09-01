@@ -8,7 +8,9 @@
 <script>
 export default {
   name: "InputForm",
-  data: () => ({}),
+  data: () => ({
+    inputTex: "",
+  }),
   methods: {},
 };
 </script>
