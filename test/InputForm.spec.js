@@ -33,4 +33,11 @@ describe('InputForm', () => {
     expect(wrapper.vm.count).toBe(0)
   })
 
+  test('inputに入力できる文字数が7文字以内でなければfalseを返す', () => {
+    const wrapper = mount(InputForm)
+    const input = wrapper.find('#titleInput')
+    input.setValue('hogehoge')
+    expect(wrapper.vm.textsizeMin).toBe(false)
+  })
+
 })
