@@ -13,4 +13,10 @@ describe('InputForm', () => {
   test('インプットが存在する', () => {
     expect(input.exists()).toBe(true)
   })
+
+  test('dataにはinputTextフィールドがある', () => {
+    const inputValue = wrapper.vm.$data.inputTex
+    expect(inputValue).toBe('')
+  })
+
 })
