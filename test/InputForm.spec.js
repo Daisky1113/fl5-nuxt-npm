@@ -28,4 +28,9 @@ describe('InputForm', () => {
     expect(wrapper.vm.$data.inputTex).toBe('hogehoge')
   })
 
+  test('dataにはinputの文字数を数えるフィールドがある', () => {
+    const wrapper = mount(InputForm)
+    expect(wrapper.vm.count).toBe(0)
+  })
+
 })
