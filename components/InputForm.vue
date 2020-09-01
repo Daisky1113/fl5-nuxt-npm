@@ -1,6 +1,8 @@
 <template>
   <v-card>
-    <v-card-text></v-card-text>
+    <v-card-text>
+      <v-text-field id="titleInput" label="test1" outlined />
+    </v-card-text>
   </v-card>
 </template>
 <script>
